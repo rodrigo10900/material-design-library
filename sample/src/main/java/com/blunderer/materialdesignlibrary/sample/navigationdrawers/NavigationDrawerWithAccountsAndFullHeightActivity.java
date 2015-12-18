@@ -8,6 +8,7 @@ import com.blunderer.materialdesignlibrary.handlers.ActionBarHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerAccountsHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerAccountsMenuHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerBottomHandler;
+import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerStyleHandler;
 import com.blunderer.materialdesignlibrary.handlers.NavigationDrawerTopHandler;
 import com.blunderer.materialdesignlibrary.models.Account;
 import com.blunderer.materialdesignlibrary.sample.R;
@@ -19,6 +20,11 @@ import com.blunderer.materialdesignlibrary.sample.viewpagers.ViewPagerWithTabsFr
 
 public class NavigationDrawerWithAccountsAndFullHeightActivity
         extends com.blunderer.materialdesignlibrary.activities.NavigationDrawerActivity {
+
+    @Override
+    public NavigationDrawerStyleHandler getNavigationDrawerStyleHandler() {
+        return null;
+    }
 
     @Override
     public NavigationDrawerAccountsHandler getNavigationDrawerAccountsHandler() {
@@ -89,6 +95,11 @@ public class NavigationDrawerWithAccountsAndFullHeightActivity
     @Override
     public int defaultNavigationDrawerItemSelectedPosition() {
         return 1;
+    }
+
+    @Override
+    protected boolean enableActionBarShadow() {
+        return true;
     }
 
     @Override

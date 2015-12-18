@@ -1,13 +1,17 @@
 <resources>
 
-    <style name="MaterialDesignLibraryTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="MaterialDesignLibraryTheme" parent="Theme.AppCompat">
         <item name="colorPrimary">@color/mdl_color_primary</item>
         <item name="colorPrimaryDark">@color/mdl_color_primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="MaterialDesignLibraryTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="MaterialDesignLibraryTheme.Light" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/mdl_color_primary</item>
         <item name="colorPrimaryDark">@color/mdl_color_primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="MaterialDesignLibraryTheme.NavigationDrawer.ItemsTextStyle" parent="@android:style/TextAppearance.Widget.TextView">

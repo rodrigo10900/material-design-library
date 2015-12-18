@@ -26,6 +26,11 @@ public class SearchBarAutoCompletionActivity extends Activity {
     }
 
     @Override
+    protected boolean enableActionBarShadow() {
+        return true;
+    }
+
+    @Override
     protected ActionBarHandler getActionBarHandler() {
         return new ActionBarSearchHandler(this, new OnSearchListener() {
 
@@ -37,7 +42,7 @@ public class SearchBarAutoCompletionActivity extends Activity {
 
         })
                 .enableAutoCompletion()
-                .setAutoCompletionItems(mItems)
+                .setAutoCompletionSuggestions(mItems)
                 .setAutoCompletionMode(ToolbarSearch.AutoCompletionMode.CONTAINS);
     }
 
